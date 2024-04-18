@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="overflow-hidden vh-100">
         <!-- CREATING NAVBAR -->
         <nav class="navbar d-md-none bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
@@ -134,11 +134,149 @@
                             <li><a class="dropdown-item" href="#">Esci</a></li>
                         </ul>
                     </div>
+
                 </div>
                 <!-- CREATING INITIAL PART OF CONTENT -->
+                <!-- ******************************** -->
+                <!-- JUMBOTRON -->
+                <div class="col my-5 vh-100">
+                    <h1 class="fw-semibold text-center">Crea nuovo prodotto</h1>
+                    <p class="col-lg-8 mx-auto fs-5 text-muted px-5 text-center">
+                        I campi contrassegnati con un asterisco (*) sono obbligatori. Le Immagini devono essere in
+                        formato PNG e non devono superare i 4MB di dimensione
+                    </p>
+                    <!-- ******************************** -->
+                    <!-- FORM -->
+                    <div class="col-12">
+                        <div class="row g-5">
+                            <div class="col col-lg-6">
+                                <form class="needs-validation" novalidate="">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <!-- NAME -->
+                                            <div class="row">
+                                                <div class="col-12 col-md-2 mt-1"> <label for="firstName"
+                                                        class="form-label fw-semibold float mt-1">Nome</label></div>
+                                                <div class="col-12 col-md-10"> <input type="text" class="form-control"
+                                                        id="firstNAme" placeholder="Samsung Galaxy 10 Plus" value=""
+                                                        required="">
+                                                    <div class="invalid-feedback">
+                                                        Valid name is required.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- PRICE -->
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-2 mt-1">
+                                                    <label for="lastName" class="form-label fw-semibold">Prezzo</label>
+                                                </div>
+                                                <div class="col-12 col-md-10">
+                                                    <input type="text" class="form-control" id="lastName"
+                                                        placeholder="99.00" value="" required="">
+                                                    <div class="invalid-feedback">
+                                                        Valid price is required.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- PRODUCT NAME -->
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-2 mt-1">
+                                                    <label for="username" class="form-label fw-semibold">Marca</label>
+                                                </div>
+                                                <div class="col-12 col-md-10">
+                                                    <select class="form-select fw-normal"
+                                                        aria-label="Default select example">
+                                                        <option selected>---Seleziona---</option>
+                                                        <option value="1">Samsung</option>
+                                                        <option value="2">Oppo</option>
+                                                        <option value="3">Apple</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                        <!-- TEXT AREA -->
+                                        <div class="col-12">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"
+                                                rows="5" maxlength="1000"></textarea>
+                                        </div>
+                                        <!-- CHOSE FILE -->
+                                        <div class="input-group">
+                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                            <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                                        </div>
+                                        <!-- BUTTONS ROW -->
+                                        <div class="col-12">
+                                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                <button type="button"
+                                                    class="btn btn-outline-secondary">Disponibile</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-secondary">Esaurito</button>
+                                                <button type="button" class="btn btn-outline-secondary">Fuori
+                                                    produzione</button>
+                                                <button type="button" class="btn btn-outline-secondary">In
+                                                    arrivo</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-md mt-3" type="submit">Salva</button>
+                            </div>
+                            <!-- CHOICE LIST -->
+                            </form>
+                            <div class="col-12 col-lg-6">
+                                <div class="list-group">
+                                    <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value=""
+                                            checked="">
+                                        <span>
+                                            fotocamera principale
+                                            <small class="d-block text-body-secondary">foto di alta
+                                                qualit&agrave; e registrare video nitidi</small>
+                                        </span>
+                                    </label>
+                                    <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                        <span>
+                                            Schermo OLED
+                                            <small class="d-block text-body-secondary">offre colori vividi per
+                                                un'esperienza visiva straordinaria.</small>
+                                        </span>
+                                    </label>
+                                    <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                        <span>
+                                            processore Octa-core
+                                            <small class="d-block text-body-secondary">prestazioni fluide e veloci
+                                                per eseguire le applicazioni pi&ugrave; esigenti</small>
+                                        </span>
+                                    </label>
+                                    <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                        <span>
+                                            ricarica wireless
+                                            <small class="d-block text-body-secondary">consente di ricaricare lo
+                                                smartphone comodamente senza l'uso di cavi</small>
+                                        </span>
+                                    </label>
+                                    <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                        <span>
+                                            connessione 5G
+                                            <small class="d-block text-body-secondary">navigazione ultra veloce e
+                                                streaming senza interruzioni</small>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </main>
 
     <!-- JAVASCRIPT -->

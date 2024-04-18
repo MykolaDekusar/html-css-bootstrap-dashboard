@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main class="overflow-hidden vh-100">
+    <main class="overflow-hidden">
         <!-- CREATING NAVBAR -->
         <nav class="navbar d-md-none bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
@@ -55,7 +55,7 @@
             </div>
         </nav>
         <!-- SECONDARY NAVBAR -->
-        <div class="container-fluid">
+        <div class="container-fluid vh-100">
             <div class="row">
                 <div class="col-md-3 d-none d-md-flex flex-column vh-100 p-3 text-white bg-dark">
                     <a href="/"
@@ -139,7 +139,7 @@
                 <!-- CREATING INITIAL PART OF CONTENT -->
                 <!-- ******************************** -->
                 <!-- JUMBOTRON -->
-                <div class="col my-5 vh-100">
+                <div class="col py-5 vh-100 overflow-y-scroll overflow-hidden">
                     <h1 class="fw-semibold text-center">Crea nuovo prodotto</h1>
                     <p class="col-lg-8 mx-auto fs-5 text-muted px-5 text-center">
                         I campi contrassegnati con un asterisco (*) sono obbligatori. Le Immagini devono essere in
@@ -269,6 +269,14 @@
                                             connessione 5G
                                             <small class="d-block text-body-secondary">navigazione ultra veloce e
                                                 streaming senza interruzioni</small>
+                                        </span>
+                                    </label>
+                                    <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                        <span>
+                                            tecnologia NFCS
+                                            <small class="d-block text-body-secondary">per effettuare pagamenti senza
+                                                contatto</small>
                                         </span>
                                     </label>
                                 </div>

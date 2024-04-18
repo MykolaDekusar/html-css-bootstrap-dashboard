@@ -57,7 +57,7 @@
         <!-- SECONDARY NAVBAR -->
         <div class="container-fluid">
             <div class="row">
-                <div class="d-flex col-md-3 d-none d-md-flex flex-column vh-100 p-3 text-white bg-dark">
+                <div class="col-md-3 d-none d-md-flex flex-column vh-100 p-3 text-white bg-dark">
                     <a href="/"
                         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                         <span class="fs-4">Bootstrap Dashboard</span>
@@ -137,7 +137,7 @@
                 </div>
 
                 <!-- CREATING INITIAL PART OF CONTENT -->
-                <div class="col col-md-9">
+                <div class="col col-md-9 vh-100 overflow-y-scroll">
                     <div class="d-flex border-bottom border-dark-subtle py-3 mb-3">
                         <h1 class="mb-0 fw-semibold">10 prodotti trovati</h1>
                         <div class="col d-flex justify-content-end align-items-center">
@@ -201,15 +201,359 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img src="https://picsum.photos/50" alt="">
-                                    <span class="text-">Smartphone Samsung Galaxy S21</span>
-                                    <span class="d-none d-lg-block fs-6">some text that will appear at large
-                                        scrennes</span>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Smartphone Samsung Galaxy S21</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Display AMOLED,
+                                            Fotocamera Ultra Wide,
+                                            Batteria a lunga durata</span>
+                                    </div>
                                 </td>
-                                <td class="text-center"><span class="d-none d-sm-block">799.00&euro;</span></td>
-                                <td class="text-center"><span class="d-none d-md-block">si</span></td>
+                                <td><span class="d-none d-sm-block text-center mt-3">799.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
                                 <td>
-                                    <div class="d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Apple MacBook Pro 13"</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Processore M1, SSD ultraveloce,
+                                            Display Retina</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">1299.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Smartwatch Apple Watch Series 6</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Monitoraggio attività,
+                                            Misurazione ossigeno nel sangue, Display Always-On</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">429.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Auricolari Wireless Apple AirPods Pro</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Cancellazione attiva del rumore,
+                                            Resistenza all'acqua e al sudore</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">279.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Console Sony PlayStation 5</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Gaming ad alta definizione,
+                                            Tempi di caricamento rapidi, Supporto per giochi 4K</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">499.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Monitor Gaming ASUS ROG Strix XG27UQ</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Schermo 4K UHD, Frequenza di
+                                            aggiornamento 144Hz, Tecnologia HDR</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">999.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Stampante Multifunzione HP LaserJet Pro MFP M28w</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Stampa, Scansione, Copia,
+                                            Connessione Wi-Fi</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">159.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-danger"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Router Wi-Fi Mesh TP-Link Deco X20</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Copertura fino a 560 mq,
+                                            Velocità fino a 1800 Mbps, Gestione tramite app</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">199.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">SSD NVMe Western Digital Black SN850</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Capacità 1TB, Velocità di
+                                            lettura fino a 7000 MB/s, Tecnologia PCIe Gen4</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">229.00&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-success"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button type="button"
+                                            class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                            </svg></button>
+                                        <button type="button"
+                                            class=" d-flex btn border-danger border-2 text-danger me-1 p-2"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex">
+                                    <img src="https://picsum.photos/50" alt="">
+                                    <div class="ms-2">
+                                        <span class="fs-5">Mouse Gaming Logitech G502 HERO</span>
+                                        <span class="d-none d-xl-block fs-6 opacity-75">Sensore HERO 25K, 11 pulsanti
+                                            programmabili, Peso personalizzabile</span>
+                                    </div>
+                                </td>
+                                <td><span class="d-none d-sm-block text-center mt-3">79.99&euro;</span></td>
+                                <td><span class="d-none d-md-block text-center mt-2 pt-1 text-danger"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                        </svg></span></td>
+                                <td>
+                                    <div class="d-flex justify-content-center mt-2">
                                         <button type="button"
                                             class=" d-flex btn border-primary border-2 text-primary me-1 p-2"><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16"

@@ -141,17 +141,17 @@
                 <!-- JUMBOTRON -->
                 <div class="col py-5 vh-100 overflow-y-scroll overflow-hidden">
                     <h1 class="fw-semibold text-center">Crea nuovo prodotto</h1>
-                    <p class="col-lg-8 mx-auto fs-5 text-muted px-5 text-center">
+                    <p class="col-lg-8 mx-auto fs-5 text-muted px-5 text-center mb-5">
                         I campi contrassegnati con un asterisco (*) sono obbligatori. Le Immagini devono essere in
                         formato PNG e non devono superare i 4MB di dimensione
                     </p>
                     <!-- ******************************** -->
                     <!-- FORM -->
                     <div class="col-12">
-                        <div class="row g-5">
-                            <div class="col col-lg-6">
+                        <div class="row g-5 mt-1">
+                            <div class="col col-lg-6 mt-0">
                                 <form class="needs-validation" novalidate="">
-                                    <div class="row g-3">
+                                    <div class="row g-3 mb-3">
                                         <div class="col-12">
                                             <!-- NAME -->
                                             <div class="row">
@@ -224,11 +224,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary btn-md mt-3" type="submit">Salva</button>
+                                    <button class="btn btn-primary btn-md d-none d-lg-block"
+                                        type="submit">Salva</button>
                             </div>
                             <!-- CHOICE LIST -->
                             </form>
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-6 mt-0">
                                 <div class="list-group">
                                     <label class="list-group-item d-flex gap-2">
                                         <input class="form-check-input flex-shrink-0" type="checkbox" value=""
@@ -280,6 +281,7 @@
                                         </span>
                                     </label>
                                 </div>
+                                <button class="btn btn-primary btn-md mt-3 d-lg-none" type="submit">Salva</button>
                             </div>
                         </div>
                     </div>
